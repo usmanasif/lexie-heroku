@@ -34,7 +34,7 @@ async function bootstrap() {
     customSiteTitle: 'Lexie-ai',
   });
 
-  await app.listen(parseInt(config.get('PORT'), '0.0.0.0') || 3000, () =>
+  await app.listen(parseInt(config.get('PORT')) || 3000, () =>
     console.log(`Server started on port: ${config.get('PORT')}`),
   );
 }
