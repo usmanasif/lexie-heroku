@@ -1,0 +1,25 @@
+{
+  "name": "NestJS",
+  "success_url": "/",
+  "scripts": {
+    "predeploy": "npm install && npm run build"
+  },
+  "env": {
+    "NODE_ENV": {
+      "PORT": "8080",
+      "UPLOADED_FILES_DESTINATION": "file-storage",
+      "MONGO_URI": "mongodb+srv://admin:xeytG83Ra$&LQNX3@cluster0.5akyops.mongodb.net/lexie-ai?retryWrites=true&w=majority"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
